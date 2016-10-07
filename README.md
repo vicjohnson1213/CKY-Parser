@@ -42,7 +42,36 @@ the beautiful tropical fish
 
 ### The Ouput
 
-TODO: Make the output of the program show the successful parses of each sentence rather than the contents of the table.
+The output currently shows the original sentence that was parsed, the number of successful parses give the specified grammar rules, and the contents of each cell in the parsing table.
+
+*Example Ouput File:*
+
+```text
+PARSING SNETENCE: the fish
+NUMBER OF PARSES FOUND: 0
+CHART:
+  chart[1,1]: ART
+  chart[1,2]: -
+  chart[2,2]: NOUN
+
+PARSING SNETENCE: the beautiful tropical fish
+NUMBER OF PARSES FOUND: 1
+CHART:
+  chart[1,1]: ART
+  chart[1,2]: -
+  chart[1,3]: -
+  chart[1,4]: S
+  chart[2,2]: ADJ
+  chart[2,3]: -
+  chart[2,4]: X
+  chart[3,3]: ADJ
+  chart[3,4]: NP
+  chart[4,4]: NOUN
+```
+
+## Next Steps
+
+- [ ] Make the output of the program show the successful parses of each sentence rather than the contents of the table.
 
 ## License
 
